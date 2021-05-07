@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+.wrap {
+    margin: 100px;
+    width: 1000px;
+    height: 1000px;
+    padding: 100px;
+}
+.main {
+    padding: 24px 32px 28px 49px;
+}
+.loading {
+    border: 2px solid #1e1e1e;
+    width: 350px;
+    height: 219px;
+    padding: 19px 20px 81px 21px;
+    position: relative;
+}
+a.popup-close {
+    background: url("../img/gifticon/gifticon-x.png") no-repeat;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    position: absolute;
+    top: 21px;
+    right: 22px;
+}
+h2.win {
+    font-size: 16.3px;
+    color: #e00123;
+    letter-spacing: -2.5px;
+}
+.more-loading {
+    margin-top: 57px;
+}
+p.loading-text {
+    font-size: 12px;
+    color: #4d4d4d;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+progress.loading-bar {
+    margin-top: 14px;
+    width: 100%;
+    background: url("../img/gifticon/loading-bar.png") no-repeat;
+}
