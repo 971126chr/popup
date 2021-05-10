@@ -12,8 +12,8 @@
     padding: 140px 210px;
 }
 .main {
-    width: 568px;
-    height: 365px;
+    min-width: 568px;
+    min-height: 365px;
     border: 5px solid #ffffff;
     background: #e9e8e8;
     position: relative;
@@ -23,7 +23,6 @@ a.popup-close {
     border: 3px solid #ffffff;
     border-radius: 50%;
     background: #000000;
-    width: 50px;
     height: 50px;
     display: block;
     position: absolute;
@@ -44,7 +43,6 @@ span.popup-close-x {
 }
 a.arrow {
     background: linear-gradient( to bottom, #fafafa, #d5d9dd);
-    width: 20px;
     height: 46px;
     border-right: 1px solid #999999;
     display: inline-block;
@@ -73,7 +71,6 @@ span.note {
     display: inline-block;
     background: url("../img/h1-bg.png") no-repeat;
     width: 448px;
-    height: 46px;
     margin-left: -6px;
     vertical-align: top;
 }
@@ -91,8 +88,7 @@ h1.add-keyword {
     background: #ffffff;
 }
 .content {
-    width: 517px;
-    height: 204px;
+    min-height: 204px;
     padding: 19px 21px 20px 13px;
 }
 p.content-explain,p.list-content-explain {
@@ -104,17 +100,24 @@ p.content-explain,p.list-content-explain {
     margin-top: 18px;
     padding-left: 3px;
 }
-input.keyword-button {
+label.keyword-button {
     border: 1px solid #b3b3a0;
     border-radius: 3px;
-    background-image: url("../img/button-bg.png"), url("../img/button-arrow.png");
-    background-repeat: repeat-x, no-repeat;
-    background-position: center, left;
+    background: url("../img/button-bg.png") repeat-x;
     box-shadow: 2px 2px 1px #eaeaea;
-    width: 138px;
-    height: 27px;
+    padding: 3.5px 11px 3.5px 6px;
+    margin-right: 7px;
     font-size: 14px;
     color: #40690d;
+}
+div.content-input:first-child > label.keyword-button {
+    padding: 3.5px 25px 3.5px 6px;
+}
+input.green-arrow {
+    background: url("../img/button-arrow.png") no-repeat;
+    border: none;
+    padding-left: 27px;
+    display: inline-block;
 }
 input.keyword-write {
     margin-left: 1px;
@@ -122,17 +125,17 @@ input.keyword-write {
     border-radius: 3px;
     background: #fafafa;
     box-shadow: 0 1px #d8e8f0;
-    width: 333px;
-    height: 27px;
+    min-width: 349px;
+    min-height: 27px;
 }
 .content-input:not(:first-child) {
-    margin-top: 6px;
+    margin-top: 8px;
 }
 .ok-or-close, .journal-ok-or-close {
     text-align: center;
 }
 .ok-or-close {
-    margin-top: 37px;
+    margin-top: 16px;
 }
 button.ok-button {
     border: 1px solid #474b43;
@@ -156,8 +159,8 @@ button.ok-button {
     padding: 140px;
 }
 .journal-main {
-    width: 751px;
-    height: 662px;
+    min-width: 751px;
+    min-height: 662px;
     border: 5px solid #ffffff;
     background: #e9e8e8;
     position: relative;
@@ -187,8 +190,7 @@ span.book {
 .list-h1-bg {
     display: inline-block;
     background: url("../img/list-h1-bg.png") no-repeat;
-    width: 505px;
-    height: 46px;
+    min-width: 505px;
     margin-left: -6px;
     vertical-align: top;
 }
@@ -199,8 +201,8 @@ h1.journal-list {
     padding-left: 10px;
 }
 .list-content {
-    width: 701px;
-    height: 505px;
+    min-width: 701px;
+    min-height: 505px;
     padding: 16px 24px 12px 23px;
 }
 p.list-content-explain {
@@ -223,10 +225,9 @@ p.list-content-explain {
 }
 .choice-center {
     background: url("../img/choice-center.png") repeat-x;
-    height: 63px;
     padding-left: 18px;
 }
-h2.choice, h2.search-word {
+h2.choice, label.search-word {
     background: url("../img/blue-v.png") no-repeat left;
     padding-left: 20px;
     font-size: 14px;
@@ -245,8 +246,9 @@ h2.choice {
     vertical-align: middle;
     background: url("../img/choice-line.png") no-repeat left center;
 }
-a.english-choice {
-    text-decoration: none;
+button.english-choice {
+    border: none;
+    background: none;
     color: #4a4949;
 }
 .korean {
@@ -267,10 +269,9 @@ a.english-choice {
 }
 .search-word-center {
     background: url("../img/search-word-center.png") repeat-x;
-    height: 49px;
     padding-left: 18px;
 }
-h2.search-word {
+label.search-word {
     line-height: 49px;
 }
 select.search-select {
@@ -288,7 +289,7 @@ input.search-here {
     border: 1px solid #767474;
     border-radius: 5px;
     box-shadow: 1px 1px 4px #acacac inset;
-    width: 363px;
+    min-width: 363px;
     height: 33px;
     font-size: 14px;
     color: #565656;
@@ -363,6 +364,11 @@ tr.th-gray th:first-child, tbody tr td:first-child {
 }
 tr.th-gray th:last-child, tbody tr td:last-child {
     border-right: none;
+}
+label.td-click {
+    width: 100%;
+    display: inline-block;
+    line-height: 31px;
 }
 .under-button-list {
     margin-top: 11px;
