@@ -12,7 +12,6 @@
     <div class="wrap">
         <div class="main">
             <div class="loading">
-                <a href="#none" class="popup-close"></a>
                 <h2 class="win">
                     당첨 확인중
                 </h2>
@@ -20,13 +19,17 @@
                     <p class="loading-text">
                         잠시만 기다려 주세요...
                     </p>
-                    <progress value="50" max="100" class="loading-bar">
-                        <strong>Profress: 50%</strong>
-                    </progress>
+                    <div class="pink-loading-bar-left">
+                        <div class="gray-loading-bar-right">
+                            <div class="gray-loading-bar-center">
+                                <div class="pink-loading-bar"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <a href="#none" class="popup-close"></a>
             </div>
             <div class="check">
-                <a href="#none" class="popup-close"></a>
                 <h2 class="win">
                     확인
                 </h2>
@@ -39,32 +42,34 @@
                      이 당첨되셨습니다.
                 </p>
                 <div class="stamp">
-                    <p class="stamp-number">
-                        사용 스탬프 수
-                        <strong class="your-stamp">
-                            <span class="red-text">
-                                100
-                            </span>
-                            개
-                        </strong>
-                    </p>
-                    <p class="stamp-number">
-                        나의 남은 스탬프 수
-                        <strong class="your-stamp">
-                            <span class="red-text">
-                                100
-                            </span>
-                            개
-                        </strong>
-                    </p>
+                    <dl>
+                        <dt class="stamp-number">사용 스탬프 수</dt>
+                        <dd class="one-line">
+                            <strong class="your-stamp">
+                                <span class="red-text">
+                                    100
+                                </span>
+                                개
+                            </strong>
+                        </dd>
+                        <dt class="stamp-number">나의 남은 스탬프 수</dt>
+                        <dd class="one-line">
+                            <strong class="your-stamp">
+                                <span class="red-text">
+                                    100
+                                </span>
+                                개
+                            </strong>
+                        </dd>
+                    </dl>
                 </div>
                 <div class="gifticon-button">
                     <button class="gifticon-close">닫기</button>
                     <button class="gifticon-close">재응모</button>
                 </div>
+                <a href="#none" class="popup-close"></a>
             </div>
             <div class="result">
-                <a href="#none" class="popup-close"></a>
                 <h2 class="win">
                     당첨자 조회 결과
                 </h2>
@@ -85,6 +90,7 @@
                 <div class="gifticon-button">
                     <button class="gifticon-close">확인</button>
                 </div>
+                <a href="#none" class="popup-close"></a>
             </div>
         </div>
     </div>
