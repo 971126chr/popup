@@ -19,10 +19,11 @@
     height: 219px;
     padding: 19px 20px 81px 21px;
 }
-a.popup-close {
+button.popup-close {
     background: url("../img/gifticon/gifticon-x.png") no-repeat;
     width: 14px;
     height: 14px;
+    border: none;
     display: inline-block;
     position: absolute;
     top: 21px;
@@ -35,6 +36,7 @@ h2.win {
 }
 .more-loading {
     margin-top: 57px;
+    padding: 0 20px;
 }
 p.loading-text {
     font-size: 12px;
@@ -43,28 +45,16 @@ p.loading-text {
     font-weight: bold;
     letter-spacing: -1px;
 }
-.pink-loading-bar-left {
+.gray-loading-bar {
     display: inline-block;
-    background: url("../img/gifticon/pink-loading-bar-left.png") no-repeat left;
-    padding-left: 5px;
-    margin: 20px 0 0 19px;
+    background: url("../img/gifticon/gray-loading-bar.png") no-repeat;
+    width: 100%;
     height: 11px;
-}
-.gray-loading-bar-right {
-    display: inline-block;
-    background: url("../img/gifticon/gray-loading-bar-right.png") no-repeat right;
-    padding-right: 5px;
-    height: 11px;
-}
-.gray-loading-bar-center {
-    display: inline-block;
-    background: url("../img/gifticon/gray-loading-bar-center.png") repeat-x;
-    min-width: 257px;
-    height: 11px;
+    margin-top: 20px;
 }
 .pink-loading-bar {
     display: inline-block;
-    background: url("../img/gifticon/pink-loading-bar.png") repeat-x;
+    background: url("../img/gifticon/pink-loading-bar.png") no-repeat;
     min-width: 100px;
     height: 11px;
     vertical-align: top;
@@ -97,16 +87,26 @@ strong.gifticon-name {
     min-height: 69px;
     border: 1px solid #ebebeb;
     margin-top: 21px;
-    padding: 15px 0 0 75px;
+    padding: 15px 85px 0 75px;
+}
+.stamp dl {
+    display: inline-block;
+    width: 145px;
 }
 dt.stamp-number {
     font-size: 11.3px;
     color: #646464;
     letter-spacing: -1px;
+    display: inline-block;
 }
 dd.one-line {
-    margin: -17px 0 0 112px;
+    display: inline-block;
     letter-spacing: -1px;
+    text-align: right;
+    width: 71px;
+}
+.stamp dl dd.one-line:last-child {
+    width: 48px;
 }
 strong.your-stamp {
     font-size: 12px;

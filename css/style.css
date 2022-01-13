@@ -19,7 +19,7 @@
     position: relative;
     padding: 32px 20px 15px 19px;
 }
-a.popup-close {
+button.popup-close {
     border: 3px solid #ffffff;
     border-radius: 50%;
     background: #000000;
@@ -113,10 +113,11 @@ label.keyword-button {
 div.content-input:first-child > label.keyword-button {
     padding: 3.5px 25px 3.5px 6px;
 }
-input.green-arrow {
-    background: url("../img/button-arrow.png") no-repeat;
+span.green-arrow {
+    background: url("../img/button-arrow.png") no-repeat left center;
     border: none;
     padding-left: 27px;
+    line-height: 27px;
     display: inline-block;
 }
 input.keyword-write {
@@ -127,6 +128,7 @@ input.keyword-write {
     box-shadow: 0 1px #d8e8f0;
     min-width: 349px;
     min-height: 27px;
+    padding-left: 5px;
 }
 .content-input:not(:first-child) {
     margin-top: 8px;
