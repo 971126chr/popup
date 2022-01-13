@@ -64,6 +64,7 @@ input.show-choice {
     min-height: 22px;
     border: 1px solid #9bb3d5;
     margin-left: 3px;
+    padding-left: 5px;
 }
 table.keypad-table {
     margin-top: 8px;
